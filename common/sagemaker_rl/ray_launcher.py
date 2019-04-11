@@ -176,9 +176,10 @@ class SageMakerRayLauncher(object):
                     checkpoints.append(os.path.join(root, filename))
         checkpoints.sort(key=natural_keys)
         latest_checkpoints = checkpoints[-2:]
+        print(latest_checkpoints)
         validation = sum(1 if x.endswith("tune_metadata") or x.endswith("extra_data") else 0 for x in
                          latest_checkpoints)
-        if validation is not 2:
+        if validation is not 1:
             raise RuntimeError("Failed to save checkpoint files - .tune_metadata or .extra_data")
         for source_path in latest_checkpoints:
             _, ext = os.path.splitext(source_path)

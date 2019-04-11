@@ -4,10 +4,6 @@ FROM 520713654638.dkr.ecr.${AWS_REGION}.amazonaws.com/sagemaker-rl-tensorflow:ra
 
 WORKDIR /opt/ml
 
-############################################
-# Roboschool
-############################################
-
 RUN apt-get update && apt-get install -y \
       git cmake ffmpeg pkg-config \
       qtbase5-dev libqt5opengl5-dev libassimp-dev \
@@ -19,8 +15,10 @@ RUN pip install --upgrade \
     pip \
     setuptools
 
-RUN pip install gym[atari] && pip install -U ray && ldconfig
-    
+
+RUN pip install gym[atari] && pip install -U ray && pip install -U tensorflow && ldconfig
+RUN pip install setproctitle
+
 RUN pip install sagemaker-containers --upgrade
 
 ENV PYTHONUNBUFFERED 1
