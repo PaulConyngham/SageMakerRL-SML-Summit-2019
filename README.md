@@ -24,7 +24,7 @@ Once you have the CLI installed, setting up this lab is as easy as running the f
 
 ## Step 1 - Login to Sagemaker
 
-![aws console](images/awsconsole.png)
+![aws console](images/awsconsole2.png)
 
 &nbsp;
 
