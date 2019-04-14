@@ -29,8 +29,8 @@ class MyLauncher(SageMakerRayLauncher):
             },
             "config": {
                 "monitor": True,  # Record videos.
-                "num_workers": (self.num_cpus-1),
-                "num_gpus": self.num_gpus,
+#                 "num_workers": (self.num_cpus-1),
+#                 "num_gpus": self.num_gpus,
             }
           }
         }

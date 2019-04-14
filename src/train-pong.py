@@ -25,13 +25,13 @@ class MyLauncher(SageMakerRayLauncher):
             "env": "PongNoFrameskip-v4",
             "run": "IMPALA",
             "stop": {
-              "episode_reward_mean": 18,
+              "episode_reward_mean": 19,
             },
             "config": {
                 "monitor": True,  # Record videos.
 
-                "num_workers": (self.num_cpus-1),
-                "num_gpus": self.num_gpus,
+#                 "num_workers": (self.num_cpus-1),
+#                 "num_gpus": self.num_gpus,
 
                 "sample_batch_size": 50,
                 "train_batch_size": 1000,

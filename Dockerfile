@@ -16,7 +16,8 @@ RUN pip install --upgrade \
     setuptools
 
 
-RUN pip install gym[atari] && pip install -U ray && pip install -U tensorflow && ldconfig
+RUN pip install -U gym && pip install gym[atari] && pip install -U ray && ldconfig
+  
 RUN pip install setproctitle
 
 RUN pip install sagemaker-containers --upgrade
