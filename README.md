@@ -21,19 +21,27 @@ Once you have the CLI installed, setting up this lab is as easy as running the f
 `aws cloudformation create-stack --stack-name awsRLSummit2019 --template-body https://s3-ap-southeast-2.amazonaws.com/aws-summit-2019-rl/AWS-summit_RL-CloudFormation.yml --capabilities CAPABILITY_IAM`
 
 
-![aws console](images/awsconsole.png)
 
 ## Step 1 - Login to Sagemaker
+
+![aws console](images/awsconsole.png)
+
+&nbsp;
+
 1. Login to AWS Console
 2. Click "Find Services"
 3. Type "SageMaker" and hit enter
 
 
-![menu](images/SageMakerMenu.png)
+
 
 ## Step 2 - open our Notebook instance
+
+&nbsp;
+
+
 1. On the left menu under the "Notebook" section, click "Notebook instances"
-![notebook instance](images/NotebookInstance.png)
-2. Next to our instance named "RL lab summit" there is a link called "open jupyter", click it.
+![menu](images/SageMakerMenu.png)
+2. Next to our instance named "RL-lab-summit" there is a link called "open jupyter", click it.
 3. A new tab will launch taking you to a jupyter notebook. Once this has finished loading, click the link titled "Summit-RL"
-4. Clicking the link will take you to a new directory. Click the file titled **"Sagemaker_RL_Lab_Summit_2019_One_Click.ipynb"** to get started!
+4. Clicking the link will take you to a new directory. Click the file titled **"Sagemaker_RL_Lab_Summit_2019_One_Click.ipynb"** to get started with the lab!
