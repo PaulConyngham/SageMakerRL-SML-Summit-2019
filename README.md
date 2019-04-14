@@ -23,7 +23,7 @@ Once you have the CLI installed, setting up this lab is as easy as running the f
 
 
 ## Step 1 - Login to Sagemaker
-
+&nbsp;
 ![aws console](images/awsconsole2.png)
 
 &nbsp;
@@ -43,8 +43,10 @@ Once you have the CLI installed, setting up this lab is as easy as running the f
 1. On the left menu under the "Notebook" section, click "Notebook instances"
 &nbsp;
 ![menu](images/awssagemakerhome.png)
+&nbsp;
 2. Next to our instance named "amazon-RL-lab" there is a link called "open jupyter", click it.
 &nbsp;
 ![menu](images/openjupyter.png)
+&nbsp;
 3. A new tab will launch taking you to a jupyter notebook. Once this has finished loading, click the link titled "Summit-RL"
 4. Clicking the link will take you to a new directory. Click the file titled **"Sagemaker_RL_Lab_Summit_2019_One_Click.ipynb"** to get started with the lab!
