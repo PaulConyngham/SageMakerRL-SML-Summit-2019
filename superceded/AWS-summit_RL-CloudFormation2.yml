@@ -1,0 +1,50 @@
+Description: "Creates resources (SageMaker Notebook, IAM role, SNS topic) to run the 2019 Sydney SageMaker RL lab."
+Resources:
+  BasicNotebookInstance:
+    Type: "AWS::SageMaker::NotebookInstance"
+    NotebookInstanceName: "SageMakerRLLabSummitSydney2019"
+    Properties:
+      InstanceType: "ml.t2.medium"
+      RoleArn: !GetAtt ExecutionRole.Arn
+      LifecycleConfigName: !GetAtt BasicNotebookInstanceLifecycleConfig.NotebookInstanceLifecycleConfigName
+  BasicNotebookInstanceLifecycleConfig:
+    Type: "AWS::SageMaker::NotebookInstanceLifecycleConfig"
+    Properties:
+      OnStart:
+        - Content:
+            Fn::Base64:
+              !Sub |
+                git clone https://github.com/PaulConyngham/SageMakerRL-SML-Summit-2019.git /home/ec2-user/SageMaker/Summit-RL/
+
+  ExecutionRole:
+    Type: "AWS::IAM::Role"
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          -
+            Effect: "Allow"
+            Principal:
+              Service:
+                - "sagemaker.amazonaws.com"
+            Action:
+              - "sts:AssumeRole"
+      Path: "/"
+      Policies:
+        -
+          PolicyName: "root"
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              -
+                Effect: "Allow"
+                Action: "*"
+                Resource: "*"
+
+
+
+Outputs:
+  BasicNotebookInstanceId:
+    Value: !Ref BasicNotebookInstance.NotebookInstanceName
+  BasicNotebookInstanceLifecycleConfigId:
+    Value: !Ref BasicNotebookInstanceLifecycleConfig
