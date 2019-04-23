@@ -16,7 +16,7 @@ RUN pip install --upgrade \
     setuptools
 
 
-RUN pip install -U gym && pip install gym[atari] && pip install -U ray && ldconfig
+RUN pip install -U gym && pip install gym[atari] && pip install -U ray==0.6.5 && ldconfig
   
 RUN pip install setproctitle
 

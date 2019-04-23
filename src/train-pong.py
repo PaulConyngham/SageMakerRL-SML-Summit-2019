@@ -39,6 +39,13 @@ class MyLauncher(SageMakerRayLauncher):
                 "broadcast_interval": 5,
                 "max_sample_requests_in_flight_per_worker": 1,
                 "num_data_loader_buffers": 4,
+                # set >0 to enable experience replay. Saved samples will be replayed with
+                # a p:1 proportion to new data samples.
+                "replay_proportion": 0.5,
+                # number of sample batches to store for replay. The number of transitions
+                # saved total will be (replay_buffer_num_slots * sample_batch_size).
+                "replay_buffer_num_slots": 3000,
+                "lr": 0.0005,
                 "model": {
                   "dim": 42,
                 },

@@ -57,6 +57,8 @@ def wait_for_s3_object(s3_bucket, key, local_dir, local_prefix='',
     sagemaker = session.client('sagemaker')
     bucket = s3.Bucket(s3_bucket)
     objects = []
+    
+    get_last_modified = lambda obj: int(obj.last_modified.strftime('%s'))
 
     print("Waiting for s3://%s/%s..." % (s3_bucket, key), end='', flush=True)
     start_time = time.time()
@@ -82,6 +84,7 @@ def wait_for_s3_object(s3_bucket, key, local_dir, local_prefix='',
 
     print('\n', end='', flush=True)
 
+    objects = [obj for obj in sorted(objects, key=get_last_modified)]
     if len(objects) > limit:
         print("Only downloading %d of %d files" % (limit, len(objects)))
         objects = objects[-limit:]
