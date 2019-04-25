@@ -3,6 +3,11 @@
 --
 **Authors :** Paul Conyngham & William Xu | StarAi Project Machine Learning Engineers - | Email : contact@starai.com
 
+&nbsp;
+
+![DQN BREAKOUT](https://cdn-images-1.medium.com/max/1200/1*XyIpmXXAjbXerDzmGQL1yA.gif)
+
+&nbsp;
 
 This workshop shows you how, using AWS, you can parallelise the training of your reinforcement learning algorithms to get insanely fast turn around times & results for your reinforcement learning experiments.
 
