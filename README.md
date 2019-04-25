@@ -7,13 +7,15 @@ This workshop shows you how, using AWS, you can parallelise the training of your
 
 Click the "launch stack" button below to deploy your SageMaker RL stack:
 
+Or optionally scroll down for the command to launch the lab via the AWS Command Line Interface.
+
 &nbsp;
 
 [![Launch Stack into us-east-1 with CloudFormation](http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/images/cloudformation-launch-stack-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=SageMakerRLLabSummitSydney2019&templateURL=https://s3-ap-southeast-2.amazonaws.com/aws-summit-2019-rl/AWS-summit_RL-CloudFormation.yml)
 
 &nbsp;
 
-Or optionally scroll down for the command to launch the lab via the AWS Command Line Interface.
+
 
 1. Step 1 of cloud formation is to specify a template. Do not change any of the settings here. Scroll down to the bottom of the page and click the orange "Next" button
 
