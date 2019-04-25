@@ -1,5 +1,5 @@
 
-# **Turbocharging Reinforcement Learning with SageMakerRL **
+# **Turbocharging Reinforcement Learning with SageMakerRL**
 --
 **Authors :** Paul Conyngham & William Xu | StarAi Project Machine Learning Engineers - | Email : contact@starai.com
 
