@@ -5,7 +5,7 @@ This workshop builds on top of the [Sagemaker Examples](https://github.com/awsla
 
 ## Step 0 - Cloud Formation Installation
 
-Click below to deploy your SageMaker RL stack or scroll down for the command to launch the lab via the AWS Command Line Interface:
+Click the button below to deploy your SageMaker RL stack or optionally scroll down for the command to launch the lab via the AWS Command Line Interface.
 
 &nbsp;
 
@@ -86,3 +86,9 @@ or if you have the Amazon Command Line Interface installed, setting up this lab 
 
 
 4. Clicking the link will take you to a new directory. Click the file titled **"Sagemaker_RL_Lab_Summit_2019_One_Click.ipynb"** to get started with the lab!
+
+&nbsp;
+
+![menu](images/inJupyter.png)
+
+&nbsp;
