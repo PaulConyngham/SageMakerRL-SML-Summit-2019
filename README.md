@@ -1,3 +1,9 @@
+
+# **Turbocharging Reinforcement Learning with SageMakerRL **
+--
+**Authors :** Paul Conyngham & William Xu | StarAi Project Machine Learning Engineers - | Email : contact@starai.com
+
+
 This workshop shows you how, using AWS, you can parallelise the training of your reinforcement learning algorithms to get insanely fast turn around times & results for your reinforcement learning experiments.
 
 # Instructions
@@ -5,9 +11,9 @@ This workshop shows you how, using AWS, you can parallelise the training of your
 
 ## Step 0 - Cloud Formation Installation
 
-Click the "launch stack" button below to deploy your SageMaker RL stack:
+Click the "launch stack" button below to deploy your SageMaker RL stack. This will take you to the AWS console to setup the stack for this lab. Continue following the instructions here in order to complete this.
 
-Or optionally scroll down for the command to launch the lab via the AWS Command Line Interface.
+Or optionally scroll down for the command to launch the lab via a single command in the AWS Command Line Interface.
 
 &nbsp;
 
@@ -92,6 +98,10 @@ or if you have the Amazon Command Line Interface installed, setting up this lab 
 
 
 4. Clicking the link will take you to a new directory. Click the file titled **"Sagemaker_RL_Lab_Summit_2019_One_Click.ipynb"** to get started with the lab!
+
+&nbsp;
+
+Please note that in some rare cases the Jupyter notebook may give you a pop up asking which kernel to use. If this happens to you please select "conda_tensorflow_p36" as the kernel of choice.
 
 &nbsp;
 
