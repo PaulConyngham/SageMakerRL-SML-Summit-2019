@@ -1,4 +1,4 @@
-This workshop builds on top of the [Sagemaker Examples](https://github.com/awslabs/amazon-sagemaker-examples) to show you how, using AWS, you can parallelise the training of your reinforcement learning algorithms to get insanely fast turn around times & results for your reinforcement learning experiments.
+This workshop shows you how, using AWS, you can parallelise the training of your reinforcement learning algorithms to get insanely fast turn around times & results for your reinforcement learning experiments.
 
 # Instructions
 
@@ -67,7 +67,7 @@ or if you have the Amazon Command Line Interface installed, setting up this lab 
 
 &nbsp;
 
-2. Next to our instance named "amazon-RL-lab" there is a link called "open jupyter", click it.
+2. Next to our instance named "amazon-RL-lab" there is a link called "open Jupyter", click it.
 
 &nbsp;
 &nbsp;
@@ -92,3 +92,5 @@ or if you have the Amazon Command Line Interface installed, setting up this lab 
 ![menu](images/inJupyter.png)
 
 &nbsp;
+
+The rest of the workshop continues in the Jupyter notebook. Follow the instructions there to continue to learn about distributed Reinforcement Learning with Sagemaker RL.
