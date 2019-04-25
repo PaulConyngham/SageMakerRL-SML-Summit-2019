@@ -111,7 +111,7 @@ or if you have the Amazon Command Line Interface installed, setting up this lab 
 
 &nbsp;
 
-Please note that in some rare cases the Jupyter notebook may give you a pop up asking which kernel to use. If this happens to you please select "conda_tensorflow_p36" as the kernel of choice.
+Please note that in some rare cases the Jupyter notebook may give you a pop up asking which kernel to use. If this happens to you please select **"conda_tensorflow_p36"** as the kernel of choice.
 
 &nbsp;
 
