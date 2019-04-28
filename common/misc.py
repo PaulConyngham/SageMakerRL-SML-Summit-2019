@@ -59,6 +59,7 @@ def wait_for_s3_object(s3_bucket, key, local_dir, local_prefix='',
     objects = []
     
     get_last_modified = lambda obj: int(obj.last_modified.strftime('%s'))
+    object_size = lambda obj: int(obj.size)
 
     print("Waiting for s3://%s/%s..." % (s3_bucket, key), end='', flush=True)
     start_time = time.time()
@@ -88,6 +89,8 @@ def wait_for_s3_object(s3_bucket, key, local_dir, local_prefix='',
     if len(objects) > limit:
         print("Only downloading %d of %d files" % (limit, len(objects)))
         objects = objects[-limit:]
+    
+    objects = [obj for obj in sorted(objects, key=object_size)]
 
     fetched_files = []
     for obj in objects:
