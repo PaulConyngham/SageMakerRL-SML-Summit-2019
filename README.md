@@ -67,7 +67,9 @@ This workshop shows you how, using AWS, you can parallelise the training of your
 
 &nbsp;
 
-5. A new browser tab should open and launch a Jupyter notebook. Once the notebook has finished loading, from the top menu click **kernel**, then click **restart and clear output**. Your are now ready to get started with the lab!
+5. A new browser tab should open and launch a Jupyter notebook. Once the notebook has finished loading, from the top menu click **kernel**, then click **restart and clear output**. Another pop up should appear. Click the red button titled "restart and clear all outputs".
+
+Your are now ready to get started with the lab!
 
 &nbsp;
 
