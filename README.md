@@ -40,7 +40,7 @@ This workshop shows you how, using AWS, you can parallelise the training of your
 
 &nbsp;
 
-2. Next to our instance named "amazon-RL-lab" there is a link called "open Jupyter", click it.
+2. Next to our instance named "BasicNotebookInstance" there is a link called "open Jupyter", click it.
 
 &nbsp;
 &nbsp;
@@ -58,7 +58,7 @@ This workshop shows you how, using AWS, you can parallelise the training of your
 &nbsp;
 
 
-4. Clicking the link will take you to a new directory. Click the file titled **"Sagemaker_RL_Lab_Summit_2019_One_Click.ipynb"** to get started with the lab!
+4. Clicking the link will take you to a new directory. Click the file titled **"Sagemaker_RL_Lab_Summit_2019_One_Click.ipynb"**.
 
 &nbsp;
 
@@ -66,6 +66,15 @@ This workshop shows you how, using AWS, you can parallelise the training of your
 ![menu](images/inJupyter.png)
 
 &nbsp;
+
+5. A new browser tab should open and launch a Jupyter notebook. Once the notebook has finished loading, from the top menu click **kernel**, then click **restart and clear output**. Your are now ready to get started with the lab!
+
+&nbsp;
+
+![menu](images/restartKernel.png)
+
+&nbsp;
+
 
 Please note that in some rare cases the Jupyter notebook may give you a pop up asking which kernel to use. If this happens to you please select **"conda_tensorflow_p36"** as the kernel of choice.
 
